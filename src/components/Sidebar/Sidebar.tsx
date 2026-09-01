@@ -1,4 +1,5 @@
 import AccountToggle from "./AccountToggle"
+import Plan from "./Plan"
 import RouteSelect from "./RouteSelect"
 import Search from "./Search"
 
@@ -11,8 +12,8 @@ const Sidebar = () => {
         <Search/>
         <RouteSelect/>
       </div>
-      <div>
-        {/* for the bottom fixed  */}
+      <div className="sticky top-[calc(100vh-40px-30px)]">
+        <Plan/>
       </div>
     </div>
   )
