@@ -53,12 +53,12 @@ const Activitygraph = () => {
   return (
     <div className='col-span-8 overflow-hidden rounded border border-stone-300'>
       <div className='p-4'>
-        <h3 className='flex items-center gap-1 font-medium'>
+        <h3 className='flex items-center gap-1 font-medium text-lg'>
             <FiUser/> Activity
         </h3>
       </div>
       <div className="h-64 px-4 ">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" >
           <LineChart
             width={500}
             height={400}
@@ -66,7 +66,7 @@ const Activitygraph = () => {
             margin={{
               top: 12,
               right: 8,
-              left: -24,
+              left: -4,
               bottom: 4,
             }}
           >

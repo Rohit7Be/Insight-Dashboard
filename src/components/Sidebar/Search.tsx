@@ -1,11 +1,13 @@
-
+import { useState } from "react";
+import { CommandMenu } from "./CommandMenu";
 
 const Search = () => {
-  
+  const [open, setOpen] = useState(false);
 
   return (
     <>
       <div 
+        onClick={() => setOpen(true)}
         className="bg-stone-300 hover:bg-stone-400 transition-colors mb-4 flex rounded items-center justify-between px-2.5 py-1.5 text-sm mr-1 cursor-pointer gap-2"
       >
         
@@ -15,10 +17,10 @@ const Search = () => {
             placeholder="Search" 
             className="bg-transparent text-stone-900 placeholder:text-stone-500 focus:outline-none w-full cursor-pointer text-sm"
           />
-          <i className="ri-command-line"></i>
+          <i className="ri-command-line"></i>K
         
       </div>
-      
+      <CommandMenu open={open} setOpen={setOpen} />
     </>
   );
 };

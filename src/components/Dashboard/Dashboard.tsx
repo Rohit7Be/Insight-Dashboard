@@ -1,5 +1,6 @@
 import Activitygraph from "./Activitygraph"
 import Grid from "./Grid"
+import RecentTrasactions from "./RecentTrasactions"
 import TopBar from "./TopBar"
 import UsageRadar from "./UsageRadar"
 
@@ -11,7 +12,9 @@ const Dashboard = () => {
       <div className=' mt-3 grid grid-cols-12 gap-3 px-3'>
         <Activitygraph/>
         <UsageRadar/>
+        <RecentTrasactions/>
       </div>
+      
     </div>
   )
 }
