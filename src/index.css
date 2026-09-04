@@ -3,8 +3,10 @@
 :root {
   --font-family: "Gilroy", sans-serif;
   --bg-color: rgb(243, 234, 234);
+  --bg-dash-color: rgb(255, 255, 255);
   --primary-color: rgb(100, 48, 197);
   --text-color-primary: rgb(91, 87, 87);
+  color: rgb(24, 24, 27);
 }
 
 html,body{
@@ -16,6 +18,41 @@ html,body{
 
 body{
   background-color: var(--bg-color);
+  color: rgb(24, 24, 27);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+html.dark {
+  --bg-color: rgb(24, 24, 27);
+  --bg-dash-color: rgb(39, 39, 42);
+  --text-color-primary: rgb(161, 161, 170);
+  color: rgb(244, 244, 245);
+}
+
+html.dark body {
+  color: rgb(244, 244, 245);
+}
+
+html.dark .bg-stone-300 {
+  background-color: rgb(63, 63, 70);
+}
+
+html.dark .hover\:bg-stone-200:hover,
+html.dark .hover\:bg-stone-300:hover {
+  background-color: rgb(82, 82, 91);
+}
+
+html.dark .border-stone-200,
+html.dark .border-stone-300,
+html.dark .border-stone-400,
+html.dark .border-black {
+  border-color: rgb(82, 82, 91);
+}
+
+html.dark .text-stone-400,
+html.dark .text-stone-500,
+html.dark .text-stone-600 {
+  color: rgb(161, 161, 170);
 }
 
 .account{

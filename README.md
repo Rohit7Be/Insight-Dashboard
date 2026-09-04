@@ -29,6 +29,7 @@ I made this project for learning about Dashboards. this is my first project abou
 - Usage radar chart for comparing mobile and desktop feature usage
 - Recent transactions table with row actions and alternating row styles
 - Clean component-based structure that keeps the dashboard easy to extend
+- Darkmode is added for more User friendly Experience
 
 ## What I Learned
 
