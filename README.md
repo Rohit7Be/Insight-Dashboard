@@ -40,3 +40,17 @@ I made this project for learning about Dashboards. this is my first project abou
 - How to build keyboard shortcuts and command menus with `cmdk`
 - How to manage simple state with React hooks for UI interactions
 - How to keep a dashboard layout consistent and readable across multiple sections
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="70%">
+        <img width="100%" alt="Desktop View 1" src="https://github.com/user-attachments/assets/5b52bf67-4b05-4569-a575-e32275e33edc" /><br/><br/>
+        <img width="100%" alt="Desktop View 2" src="https://github.com/user-attachments/assets/dd1710fa-5e61-4300-be8c-850a9f4402b6" />
+      </td>
+      <td align="center" valign="top" width="30%">
+        <img width="220" alt="Mobile View" src="https://github.com/user-attachments/assets/685e53b1-66c2-4481-b0e6-977916a097f0" />
+      </td>
+    </tr>
+  </table>
+</div>
