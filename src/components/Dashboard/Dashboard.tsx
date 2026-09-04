@@ -6,10 +6,10 @@ import UsageRadar from "./UsageRadar"
 
 const Dashboard = () => {
   return (
-    <div className='bg-white rounded-lg h-[200vh] shadow pb-4'>
+    <div className='min-w-0 rounded-lg bg-white pb-4 shadow'>
       <TopBar/>
       <Grid/>
-      <div className=' mt-3 grid grid-cols-12 gap-3 px-3'>
+      <div className='mt-3 grid grid-cols-1 gap-3 px-3 lg:grid-cols-12'>
         <Activitygraph/>
         <UsageRadar/>
         <RecentTrasactions/>

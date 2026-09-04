@@ -1,4 +1,3 @@
-import React from 'react'
 import { FiTrendingDown, FiTrendingUp } from 'react-icons/fi'
 
 const Statcards = () => {
@@ -45,7 +44,7 @@ const Card= ({
     trend: "up" | "down";
     period: string;
 })=>{
-    return <div className='p-4 rounded border border-stone-400 col-span-4'>
+    return <div className='col-span-12 rounded border border-stone-400 p-4 sm:col-span-4'>
         <div className='flex items-start justify-between mb-8'>
             <div>
                 <h3 className='text-(--text-color-primary) text-sm mb-2'>

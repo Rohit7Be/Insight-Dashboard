@@ -1,9 +1,8 @@
-import React from 'react'
 import { FiArrowUpRight, FiDollarSign, FiMoreHorizontal } from 'react-icons/fi'
 
 const RecentTrasactions = () => {
   return (
-    <div className='col-span-12 p-4 rounded border border-stone-400 '>
+    <div className='col-span-1 min-w-0 overflow-x-auto rounded border border-stone-400 p-4 lg:col-span-12'>
       <div className='mb-4 flex items-center justify-between'>
         <h3 className='flex items-center gap-1.5 font-medium text-lg'>
             <FiDollarSign/> Recent Transactions

@@ -1,4 +1,3 @@
-import React from 'react'
 import { FiUser } from 'react-icons/fi'
 import {
   XAxis,
@@ -51,7 +50,7 @@ const data = [
 
 const Activitygraph = () => {
   return (
-    <div className='col-span-8 overflow-hidden rounded border border-stone-300'>
+    <div className='min-w-0 overflow-hidden rounded border border-stone-300 lg:col-span-8'>
       <div className='p-4'>
         <h3 className='flex items-center gap-1 font-medium text-lg'>
             <FiUser/> Activity
