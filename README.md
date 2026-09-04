@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# Insight Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a modern analytics dashboard built with React and Vite. It presents a clean admin-style layout with a sticky sidebar, a greeting header, KPI cards, data visualizations, and a recent transactions table.
+The project is focused on building a responsive dashboard interface that feels polished to combine reusable components, icon libraries, charts, and command-driven UI into one experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I made this project for learning about Dashboards. this is my first project about making a dashboard and I learned so many things, and I can create dashboard very easily now.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack Used
 
-## Expanding the ESLint configuration
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Recharts
+- React Icons
+- cmdk
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Responsive dashboard layout with a two-column sidebar and main content area
+- Sticky sidebar with account info, navigation routes, search, and plan details
+- Global command menu opened with `Ctrl + K` or `Cmd + K`
+- Dynamic top bar that shows a greeting and the current date
+- KPI/stat cards for revenue and order metrics
+- Activity line chart for tracking returning vs new users
+- Usage radar chart for comparing mobile and desktop feature usage
+- Recent transactions table with row actions and alternating row styles
+- Clean component-based structure that keeps the dashboard easy to extend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## What I Learned
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- How to structure a dashboard into reusable React components
+- How to use Tailwind CSS utility classes to build a polished UI quickly
+- How to integrate Recharts for line charts and radar charts in React
+- How to add icon-based interactions with React Icons
+- How to build keyboard shortcuts and command menus with `cmdk`
+- How to manage simple state with React hooks for UI interactions
+- How to keep a dashboard layout consistent and readable across multiple sections
